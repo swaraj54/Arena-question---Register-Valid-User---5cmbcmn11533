@@ -4,7 +4,7 @@ const user_list = JSON.parse(fs.readFileSync(`${__dirname}/./data/users.json`));
 
 async function seedWithDummyData() {
     try {
-        // CLEAR Dawait Subject.deleteMany({});
+        // CLEAR D await Subject.deleteMany({});
         await User.deleteMany({});
 
         const createduser = await User.insertMany(user_list);
